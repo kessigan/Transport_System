@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.21)  24 FEB 2016 17:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.21)  25 FEB 2016 15:11
 entering extended mode
 **final*software*dev*proposal.tex
-("C:\Users\Sheena\Desktop\software eng\final software dev proposal.tex"
+
+("C:\Users\Sheena\Desktop\software eng GIT\Transport_System\Documentation\final
+ software dev proposal.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -418,7 +420,12 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
 )
-("C:\Users\Sheena\Desktop\software eng\final software dev proposal.aux")
+("C:\Users\Sheena\Desktop\software eng GIT\Transport_System\Documentation\final
+ software dev proposal.aux"
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
@@ -434,8 +441,7 @@ LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 53.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 53.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 53.
@@ -521,51 +527,38 @@ LaTeX Font Info:    Try loading font information for TS1+futs on input line 95.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 			\begin{itemize}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[1
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 99.
+ [1
 
 
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (9.46158pt too wide) in paragraph at lines 103--104
-[]\T1/futs/m/n/10.95 Algorithms for de-ter-min-ing the driver, and other vari-a
-bles on the sys-tem should
- []
-
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 127.
-
 Overfull \hbox (5.7495pt too wide) in paragraph at lines 147--148
 []\T1/futs/m/n/10.95 Plot the views and vi-su-al-i-sa-tions us-ing JavaScript l
 i-braries such as d3, google charts,
  []
 
-[2] [3] ("C:\Users\Sheena\Desktop\software eng\final software dev proposal.aux"
-) ) 
+[2] [3]
+("C:\Users\Sheena\Desktop\software eng GIT\Transport_System\Documentation\final
+ software dev proposal.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
  3988 strings out of 493921
- 56165 string characters out of 3147279
+ 56410 string characters out of 3147279
  236987 words of memory out of 3000000
  7208 multiletter control sequences out of 15000+200000
  91678 words of font info for 95 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 39i,13n,47p,268b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on "final software dev proposal.pdf" (3 pages, 27206 bytes).
+ 39i,13n,47p,270b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/adobe/utopia/putr8a.pfb>
+Output written on "final software dev proposal.pdf" (3 pages, 28078 bytes).
 PDF statistics:
  21 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
