@@ -1,0 +1,183 @@
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Software Engineering ELEN4009} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge LABORATORY EXERCISE 2 
+\huge Project 13 -- Feet of Delivery and pick-up Vehicle management System \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Sheena Philip,Linda Khumalo,Kessigan Subramanium,Phumzile Dhlwathi} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{THE SYSTEM}
+
+\begin{table}[ht!]
+\centering
+\caption{Programming resources}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+Agile SDLC method											& SCRUM \\ \hline
+Architecture												& Client/server (MVC) \\ \hline
+Front end user interface method								& Browser ( preferably google chrome) \\ \hline
+Databases                                                 & PostgreSQL                                                      \\ \hline
+HTTP Server													& Django \\ \hline
+UI Frameworks                                             & \begin{tabular}[c]{@{}l@{}}Bootstrap,\\ CSS, HTML\end{tabular} \\ \hline
+JavaScript Graph Visualisation Tools/Libraries				& D3, amcharts \\ \hline
+Additional Supporting Software								& Google maps API \\ \hline
+Programming languages                                     & Python,JavaScript                                                         \\ \hline
+Editors                                                   & gedit                                                          \\ \hline
+IDE                                                       & Eclipse                                                        \\ \hline
+Documentation                                             & TexStudio                                                      \\ \hline
+\begin{tabular}[c]{@{}l@{}}Version\\ Control\end{tabular} & Git/Github                                                     \\ \hline
+\end{tabular}
+\end{table}
+
+%\begin{align} 
+%\begin{split}
+%(x+y)^3 	&= (x+y)^2(x+y)\\
+%&=(x^2+2xy+y^2)(x+y)\\
+%&=(x^3+2x^2y+xy^2) + (x^2y+2xy^2+y^3)\\
+%&=x^3+3x^2y+3xy^2+y^3
+%\end{split}					
+%\end{align}
+
+
+\section{RESPONSIBILITIES OF MEMBER TEAMS}
+
+
+\subsection{	BACK--END : Linda, Phumzile}
+
+
+\begin{itemize}
+	\item  make a database and populate it
+	\item  implement algorithms which can calculate things related to the front end, such as:
+		\begin{itemize}
+		 \item scheduling
+		\item capacity
+		\item goods transferred/pickup 
+		\end{itemize}
+	\item set up a server
+	\item link database to server
+	\item	link front end to server
+	\item	write unit tests  
+\end{itemize}
+
+
+
+
+\subsection{	FRONT END : Kessigan, Sheena}
+
+\begin{itemize}
+	\item  Make user interfaces for the different users
+
+		\begin{itemize}
+		 \item Choose a bootstrap template and make minor modifications
+		\item Plot the views and visualisations using JavaScript libraries such as d3, google charts, am charts on the template Users: For each user there is a User Interface based on the design:
+		
+		\begin{itemize}
+		\item Program
+		\item scheduling
+		\item Dispatcher (inputs the variables so the algorithms can run and return a result)
+		\item capacity
+					\item goods transferred/pickup
+					\item location
+				\item Truck driver
+					\item schedule
+					\item goods transferred/pickup
+					\item location
+		\end{itemize}
+		
+		\end{itemize}
+	\item Write unit tests 
+\end{itemize}
+
+
+%\paragraph{Heading on level 4 (paragraph)}
+%
+%\lipsum[6] % Dummy text
+%
+%%----------------------------------------------------------------------------------------
+%%	PROBLEM 2
+%%----------------------------------------------------------------------------------------
+%
+%\section{Lists}
+%
+%%------------------------------------------------
+%
+%\subsection{Example of list (3*itemize)}
+%\begin{itemize}
+%	\item First item in a list 
+%		\begin{itemize}
+%		\item First item in a list 
+%			\begin{itemize}
+%			\item First item in a list 
+%			\item Second item in a list 
+%			\end{itemize}
+%		\item Second item in a list 
+%		\end{itemize}
+%	\item Second item in a list 
+%\end{itemize}
+%
+%%------------------------------------------------
+%
+%\subsection{Example of list (enumerate)}
+%\begin{enumerate}
+%\item First item in a list 
+%\item Second item in a list 
+%\item Third item in a list
+%\end{enumerate}
+%
+%%----------------------------------------------------------------------------------------
+
+\end{document}
