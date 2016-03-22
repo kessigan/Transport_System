@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<style type="text/css">
+
+#map_container {
+  position: fixed;
+  top: 40%;
+  left: 0px;
+  right: 40%;
+  bottom:5%;
+}
+
+
+</style>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amMap example</title>
+    	  <script type="text/javascript" src="{% static 'js/testMap.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'css/ammap.css' %}" type="text/css">
+        <script src="{% static 'js/ammap.js' %}" type="text/javascript"></script>
+        <!-- map file should be included after ammap.js -->
+		<script src="{% static 'maps/southAfricaLow.js' %}" type="text/javascript"></script>
+
+<!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="{% static 'js/d3.layout.cloud.js' %}"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="{% static 'js/TweetTable.js' %}"></script>
+<script src="{% static 'js/wordCloud.js' %}"></script> -->
+</head>
+//  <script> 
+// var wordcloud_data = {{data_list|safe}};
+// cloudPlot(wordcloud_data, wordcloud);
+// var tableData = {{table_data|safe}};
+// drawTable(tableData, "table");
+// // var map_data = {{map|safe}};
+// // draw
+// </script>
+
+<!-- <script type="text/javascript" src="{% static 'js/createMap.js' %}"></script> -->
+
+<!-- <div id="wordcloud"></div>
+
+<div id="table"></div> -->
+
+
+<script >
+		var map = new AmCharts.AmMap();
+        // set path to images
+     	map.pathToImages = "{% static "ammap/images/" %}";
+     	//pathtoScrollImage = "{% static "images/" %}";
+
+</script>
+
+<div id="map_container">
+<div id="hellomap"></div>
+</div>			
