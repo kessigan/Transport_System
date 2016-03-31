@@ -1,22 +1,28 @@
 import csv
 
 def getListOfAllUsers():
-	all_users = {}
+	all_users = []
 	with open('login_details.csv', 'rb') as csvfile:
 		loginreader = csv.reader(csvfile,delimiter=';')
-
+		
+		#skip the first row because those are the headings
+		counter = 0
 		for row in loginreader:
-			all_users[row[0]] = all_users[row[1]]
+			if counter > 0: 
+				all_users.append(row)	
+			counter = counter + 1
 
 	return all_users
 
 
 
-def checkIfUserIsInList(dict_of_all_users,user,password):
+def checkIfUserIsInList(list_of_all_users,user,password):
 	return_val = False
-	if user in dict_of_all_users:
-		if password == dict_of_all_users[user]:
-			return_val =  True
+	for user_data in list_of_all_users:
+		if user == user_data[0]:
+			if password == user_data[1]:
+				return_val =  True
+				break
 		else:
 			return_val = False
 
@@ -26,7 +32,7 @@ def authenticateUser(user,password):
 	dict_of_all_users = getListOfAllUsers()
 	is_user = checkIfUserIsInList(dict_of_all_users,user,password)
 
-	print is_user
+	return is_user
 	
 
 

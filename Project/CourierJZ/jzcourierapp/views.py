@@ -4,6 +4,8 @@ from django.template import RequestContext, loader
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.csrf import ensure_csrf_cookie
 
+import authenticateUsers
+
 # Create your views here.
 
 
@@ -20,5 +22,9 @@ def login(request):
 	if("email" in request.POST and "password" in request.POST ):
 		email = request.POST["email"]
 		password = request.POST["password"]
-		print(email," ",password)
+	
+		#check if the user that is trying to log in is an authenticated user
+		is_user = authenticateUsers.authenticateUser(email,password)
+		print(is_user)
+		
 	return render_to_response("login.html", RequestContext(request))
