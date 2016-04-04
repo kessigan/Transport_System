@@ -15,6 +15,9 @@ def sender(request):
 	
 def receiver(request):
 	return render_to_response("receiver.html", RequestContext(request))
+	
+def driver(request):
+	return render_to_response("driver.html", RequestContext(request))
 
 #@csrf_protect
 @ensure_csrf_cookie
