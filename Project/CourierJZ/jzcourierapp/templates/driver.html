@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Receiver</title>
+    <title>Driver</title>
 	{% load staticfiles %}
 
     <!-- Bootstrap Core CSS -->
@@ -277,8 +277,17 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            
-                        </div>
+                            <div id="scrollerr" style="overflow:scroll; height:400px;">
+							
+								<form action="">
+										  <input type="checkbox" name="gender" value="male"> Male<br>
+										  <input type="checkbox" name="gender" value="female"> Female<br>
+										  <input type="checkbox" name="gender" value="other"> Other
+										  <br>
+										  <input type="submit" name="gender" value="other"> Other
+								</form>
+								
+							</div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
