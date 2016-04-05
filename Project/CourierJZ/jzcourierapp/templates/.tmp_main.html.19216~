@@ -68,7 +68,7 @@
                                 <div class="tab-pane fade" id="profile-pills">
                                     <h4>Sender</h4>
                                     <p>Click the link below to send a new package or view the details of a package been sent</p>
-									<a href="../courier/login_sender" class="btn btn-lg btn-success btn-block">Sender Login</a>
+									<a href="login_sender.html" class="btn btn-lg btn-success btn-block">Sender Login</a>
                                 </div>
                                 <div class="tab-pane fade" id="messages-pills">
                                     <h4>Driver</h4>

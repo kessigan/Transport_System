@@ -22,8 +22,8 @@ def driver(request):
 def main(request):
 	return render_to_response("main.html", RequestContext(request))
 
-#def login_sender(request):
-#	return render_to_response("login_sender.html", RequestContext(request
+def login_sender(request):
+	return render_to_response("login_sender.html", RequestContext(request))
 	
 #def login_receiver(request):
 #	return render_to_response("login_receiver.html", RequestContext(request))
