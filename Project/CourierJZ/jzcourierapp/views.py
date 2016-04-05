@@ -18,6 +18,21 @@ def receiver(request):
 	
 def driver(request):
 	return render_to_response("driver.html", RequestContext(request))
+	
+def main(request):
+	return render_to_response("main.html", RequestContext(request))
+
+#def login_sender(request):
+#	return render_to_response("login_sender.html", RequestContext(request
+	
+#def login_receiver(request):
+#	return render_to_response("login_receiver.html", RequestContext(request))
+	
+#def login_driver(request):
+#	return render_to_response("login_driver.html", RequestContext(request))
+	
+#def login_ceo(request):
+#	return render_to_response("ceo_sender.html", RequestContext(request))
 
 #@csrf_protect
 @ensure_csrf_cookie
@@ -41,8 +56,6 @@ def login(request):
 		elif designation == "sender":
 			html_to_load = "sender.html"
 			
-	print html_to_load
+	print (html_to_load)
 	return render_to_response("login.html", {"designation_loading":designation1}, RequestContext(request))
 	
-def driver(request):
-	return render_to_response("driver.html", {}, RequestContext(request))
