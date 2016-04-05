@@ -37,9 +37,12 @@ def login_sender(request):
 #@csrf_protect
 @ensure_csrf_cookie
 def login(request):
+	print "HERE HERE"
 	html_to_load = "login.html"
 	designation = "unknown"
 	designation1 = []
+	
+	print request.POST
 	
 	if("email" in request.POST and "password" in request.POST ):
 		email = request.POST["email"]
@@ -48,6 +51,7 @@ def login(request):
 		#check if the user that is trying to log in is an authenticated user
 		is_user,designation = authenticateUsers.authenticateUser(email,password)
 		designation1 = [designation]
+		print "i'll be over here"
 		print(is_user)
 		print(designation)
 		

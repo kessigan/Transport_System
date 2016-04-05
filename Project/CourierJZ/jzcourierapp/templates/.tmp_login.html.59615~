@@ -117,7 +117,8 @@
 										        }
 										    }
 										});
-																
+										
+										
 										
 		$.post("../courier/login",{
 			email:email1,
@@ -136,7 +137,7 @@
 //		);
 		
 		
-		//}
+		}
 		
 	  
 	  </script>
