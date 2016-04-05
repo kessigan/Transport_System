@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Receiver</title>
+    <title>Sender</title>
 	{% load staticfiles %}
 
     <!-- Bootstrap Core CSS -->
@@ -34,6 +34,26 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script>
+											
+		function myFunction() {
+		var email1 = document.getElementById("heightid").value;
+		var email2 = document.getElementById("widthid").value;
+		var email3 = document.getElementById("lengthid").value;
+		alert("R" + email1 * email2 * email3);
+		};
+											
+	</script>
+	<script>
+											
+		function myFunction1() {
+		var email1 = document.getElementById("heightid").value;
+		var email2 = document.getElementById("widthid").value;
+		var email3 = document.getElementById("lengthid").value;
+		alert("R" + email1 * email2 * email3);
+		};
+											
+	</script>
 
 </head>
 
@@ -188,31 +208,79 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Receiver</h1>
+                    <h1 class="page-header">Sender</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-primary">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                   
-								   
-								   
-								   
-								   
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                    
-                                </div>
-                            </div>
+                            Send a package
                         </div>
-                       
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <form role="form">
+                                        <div class="form-group">
+										
+                                            <label>Package size</label>
+                                            <input type="text" placeholder="length(cm)" id="lengthid">
+											<input type="text" placeholder="Width(cm)" id="widthid">
+                                            <input type="text" placeholder="Height(cm)" id="heightid">
+                                            <p class="help-block">Example block-level help text here.</p>
+											<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction()">Calculate Price </div>
+											<button type="button" class="btn btn-info" onclick="myFunction1()">Info</button>
+												<script>
+											
+												document.write("Hello");
+											
+												</script>
+											
+
+											
+											
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Reciever Name</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <input class="form-control" placeholder="Line 1">
+											<input class="form-control" placeholder="Line 2">
+											<input class="form-control" placeholder="Line 3">
+											<input class="form-control" placeholder="Area Code">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Reciever Cell Number</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Special Instructions</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Text Input with Placeholder</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Text Input with Placeholder</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-green">
