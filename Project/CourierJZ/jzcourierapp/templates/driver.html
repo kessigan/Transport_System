@@ -34,6 +34,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	    <style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
 
 </head>
 
@@ -192,83 +198,29 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-primary">
+
+            
+			<div class="row">
+                <div class="col-lg-8">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                   
-								   
-								   
-								   
-								   
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                    
-                                </div>
-                            </div>
+                           Map
+                            
                         </div>
-                       
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" id="map">
+
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
+
+
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                   
-								   
-								   
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-									
-									
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                   
-								   
-								   
-								   
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
+                <!-- /.col-lg-8 -->
+               
+                <!-- /.col-lg-4 -->
             </div>
-            <!-- /.row -->
-            <div class="row">
+			<div class="row">
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -287,85 +239,24 @@
 										  <input type="submit" name="gender" value="other"> Other
 								</form>
 								
+									<script>
+								//var hey = '<p>hi how are you</p>';
+								//document.getElementById("scrollerr").innerHTML = hey;
+								document.write("hey sheena");
 								
+								
+								
+	</script>
 								
 							</div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           
-                            
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    
-                                </div>
-                                <!-- /.col-lg-4 (nested) -->
-                                <div class="col-lg-8">
-								
-								
-                           
-                                </div>
-                                <!-- /.col-lg-8 (nested) -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                      
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
+
+
                 </div>
                 <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            
-                           
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           
-                        </div>
-                        <div class="panel-body">
-                           
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    <div class="chat-panel panel panel-default">
-                        <div class="panel-heading">
-                      
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            
-                        </div>
-                        <!-- /.panel-body -->
-                        
-                    </div>
-                    <!-- /.panel .chat-panel -->
-                </div>
+               
                 <!-- /.col-lg-4 -->
             </div>
             <!-- /.row -->
@@ -393,11 +284,30 @@
 	<script type="text/javascript" src="{% static 'lib/startbootstrap-sb-admin-2-1.0.8/dist/js/sb-admin-2.js' %}"></script>
 	
 	<script>
-								var hey = '<p>hi how are you</p>';
-								document.getElementById("scrollerr").innerHTML = hey;
+								//var hey = '<p>hi how are you</p>';
+								//document.getElementById("scrollerr").innerHTML = hey;
+								document.write("hey sheena");
 								
 								
 								
+	</script>
+	
+	<script>
+	  function initMap() {
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+		  center: {lat: 26.11240, lng: 28.01588}, 
+		  zoom: 8
+		});
+	  }
+	  
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer>
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js"
+         async defer>
 	</script>
 
 </body>
