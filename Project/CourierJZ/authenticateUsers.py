@@ -33,8 +33,13 @@ def checkIfUserIsInList(list_of_all_users,user,password):
 def authenticateUser(user,password):
 	dict_of_all_users = getListOfAllUsers()
 	is_user, designation = checkIfUserIsInList(dict_of_all_users,user,password)
+	
+	if is_user == True:
+		is_user1 = "allow"
+	else:
+		is_user1 = "deny"
 
-	return is_user, designation
+	return is_user1, designation
 	
 
 

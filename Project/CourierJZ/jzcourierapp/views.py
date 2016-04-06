@@ -14,7 +14,29 @@ def sender(request):
 	return render_to_response("sender.html", RequestContext(request))
 	
 def receiver(request):
-	return render_to_response("receiver.html", RequestContext(request))
+	html_to_load = "login.html"
+	designation = "unknown"
+	designation1 = []
+	
+	print request.POST
+	
+	if("email" in request.POST and "password" in request.POST ):
+		email = request.POST["email"]
+		password = request.POST["password"]
+	
+		#check if the user that is trying to log in is an authenticated user
+		is_user,designation = authenticateUsers.authenticateUser(email,password)
+		designation1 = [is_user]
+		print "i'll be over here"
+		print(is_user)
+		print(designation)
+		
+		if designation == "driver":
+			html_to_load = "receiver.html"
+		elif designation == "sender":
+			html_to_load = "sender.html"
+			
+	return render_to_response("receiver.html", {"designation_loading":designation1}, RequestContext(request))
 	
 def driver(request):
 	return render_to_response("driver.html", RequestContext(request))
@@ -24,9 +46,11 @@ def main(request):
 
 def login_sender(request):
 	return render_to_response("login_sender.html", RequestContext(request))
+
+@ensure_csrf_cookie	
+def login_receiver(request):
+	return render_to_response("login_receiver.html", {}, RequestContext(request))
 	
-#def login_receiver(request):
-#	return render_to_response("login_receiver.html", RequestContext(request))
 	
 #def login_driver(request):
 #	return render_to_response("login_driver.html", RequestContext(request))

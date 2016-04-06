@@ -231,22 +231,8 @@
                         <div class="panel-body">
                             <div id="scrollerr" style="overflow:scroll; height:400px;">
 							
-								<form action="">
-										  <input type="checkbox" name="gender" value="male"> Male<br>
-										  <input type="checkbox" name="gender" value="female"> Female<br>
-										  <input type="checkbox" name="gender" value="other"> Other
-										  <br>
-										  <input type="submit" name="gender" value="other"> Other
-								</form>
-								
-									<script>
-								//var hey = '<p>hi how are you</p>';
-								//document.getElementById("scrollerr").innerHTML = hey;
-								document.write("hey sheena");
-								
-								
-								
-	</script>
+
+		
 								
 							</div>
                         <!-- /.panel-body -->
@@ -290,6 +276,32 @@
 								
 								
 								
+													
+									var count = 0;
+									var tasks = ["sheena", "kessigan", "linda"];
+									while(count < tasks.length)
+									{
+									//document.write(tasks[count] +"</br>" );
+									value_count = JSON.stringify(count);
+									identifier = "login" + value_count;
+										var test = '<div  class="btn btn-sm btn-success btn-block"  id='  + identifier +' onclick="myFunction1()" >'  +  tasks[count] + ' </div>';
+						
+									   document.write(test +"</br>");
+									   
+									   
+									   count++;
+									}
+									
+									function myFunction1() {
+								
+																console.log(event.target.id);
+														};
+									
+									
+									
+									
+
+							
 	</script>
 	
 	<script>
