@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Driver</title>
+    <title>Dispatcher</title>
 	{% load staticfiles %}
 
     <!-- Bootstrap Core CSS -->
@@ -34,12 +34,31 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	    <style>
-      #map {
-        width: 500px;
-        height: 400px;
+	    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+		table_data = [
+          ['Mike',  {v: 10000, f: '$10,000'}, true],
+          ['Jim',   {v:8000,   f: '$8,000'},  false],
+          ['Alice', {v: 12500, f: '$12,500'}, true],
+          ['Bob',   {v: 7000,  f: '$7,000'},  true]
+        ];
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Salary');
+        data.addColumn('boolean', 'Full Time Employee');
+        data.addRows(table_data);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
       }
-    </style>
+    </script>
+	
+	
 
 </head>
 
@@ -56,7 +75,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../courier/receiver">Receiver</a>
+                <a class="navbar-brand" href="../courier/receiver">dispatcher</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -194,73 +213,77 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Receiver</h1>
+                    <h1 class="page-header">Dispatcher</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-
+            <!-- /.row -->
             
-			<div class="row">
+            <div class="row">
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           Map
-                            
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body" id="map">
-
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-
-
-                </div>
-                <!-- /.col-lg-8 -->
-               
-                <!-- /.col-lg-4 -->
-            </div>
-			<div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           Area Chart Example
+                           List of Packages in Storage
                             
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div id="scrollerr" style="overflow:scroll; height:400px;">
-							
-									<script>
-									var count = 0;
-									var tasks = ["sheena", "kessigan", "linda"];
-									while(count < tasks.length)
-									{
-					
-									value_count = JSON.stringify(count);
-									identifier = "login" + value_count;
-										var test = '<button type="button" class="btn btn-default" type="button"  id='  + identifier +' onclick="myFunction1()" >Submit</button>';
-						
-									   document.write(test );
-									   document.write(tasks[count]+"</br>");
-									   
-									   
-									   
-									   count++;
-									}
-									</script>
-		
+                         <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>   
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                         List of Packages for Pickup
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" id="table_div">
+							<div class="panel-body">
 								
-							</div>
+                        </div>
+                        </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-
-
+					<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction()">Run Allocation Algorithm </div>  
                 </div>
                 <!-- /.col-lg-8 -->
-               
-                <!-- /.col-lg-4 -->
+              
             </div>
             <!-- /.row -->
         </div>
@@ -285,33 +308,6 @@
 
     <!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="{% static 'lib/startbootstrap-sb-admin-2-1.0.8/dist/js/sb-admin-2.js' %}"></script>
-	
-	<script>
-
-									
-									
-		function myFunction1() 
-			{
-	
-			console.log(event.target.id);
-			};						
-	</script>
-	
-	<script>
-	  function initMap() {
-		var mapDiv = document.getElementById('map');
-		var map = new google.maps.Map(mapDiv, {
-		  center: {lat: 26.11240, lng: 28.01588}, 
-		  zoom: 8
-		});
-	  }
-	  
-	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer>
-	</script>
-	
-
 
 </body>
 
