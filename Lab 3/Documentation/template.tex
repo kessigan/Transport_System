@@ -71,7 +71,7 @@
 
 \subsection{Softwares To Install}
 \begin{itemize}
-\item  Install Anaconda
+\item  Install Anaconda python 2.7
 \item django 1.9.4
 \item postgresql 9.5.1 - the password is "password" the user is "postgres"
 \item psycopg2-2.6.1
@@ -132,12 +132,11 @@ Courier JZ currently uses an inefficient, time consuming, tedious system which i
 A prototype of the project has been created thus far. The following features have been implemented in terms of their front-end
 
 
-
 \subsubsection{The driver interface/view}
- Figure 2.1 displays the view of the driver.The current prototype has deviated from the designed view in that the estimated time of arrival does not appear and the client contact details do not appear.
+ Figure 2.1 displays the view of the driver. The current prototype has deviated from the designed view in that the estimated time of arrival does not appear and the client contact details do not appear.
 \begin{figure}[hbt!]
 \centering
-\includegraphics[width=5in]{driver.png}
+\includegraphics[width=5in]{screenshots/driver.png}
 \caption{The driver interface}
 \label{Driver}
 \end{figure}
@@ -146,37 +145,26 @@ A prototype of the project has been created thus far. The following features hav
 Figure 2.2 displays the dispatcher view before the dispatcher runs the algorithm to assign packages to drivers and routes. The current prototype achieves this view.
 \begin{figure}[hbt!]
 \centering
-\includegraphics[width=5in]{dispatcherBefore.png}
+\includegraphics[width=5in]{screenshots/dispatcher.png}
 \caption{The dispatcher interface before running the allocation algorithm}
 \label{DispatcherBefore}
 \end{figure}
-
-
-
 
 \subsubsection{The receiver view before user submits}
 In order for the receiver to track the progress of their package they have to enter the package ID sent to them via email notification. Figure \ref{ReceiverBefore} shows the page where the user enters their package id. The current prototype achieves this view.
 \begin{figure}[hbt!]
 \centering
-\includegraphics[width=5in]{receiverBefore.png}
+\includegraphics[width=5in]{screenshots/receiver.png}
 \caption{The receiver interface}
 \label{ReceiverBefore}
 \end{figure}
 
-\subsubsection{The receiver view after the user submits}
-Figure \ref{ReceiverAfter} shows the interface the receiver sees after they have entered their package details. This view shows the package details and estimated time of delivery.
-\begin{figure}[hbt!]
-\centering
-\includegraphics[width=5in]{receiverAfter.png}
-\caption{The receiver interface after the user submits query} 
-\label{ReceiverAfter}
-\end{figure}
 
 \subsubsection{The sender view}
-Figure \ref{Sender} shows the sender view. The prototype deviates from the design in that the account information doesn't not appear and the estimated time of pick-up and delivery are not displayed.
+Figure \ref{Sender} shows the sender view. 
 \begin{figure}[hbt!]
 \centering
-\includegraphics[width=5in]{sender.png}
+\includegraphics[width=5in]{screenshots/sender.png}
 \caption{The sender interface}
 \label{Sender}
 \end{figure}
@@ -186,26 +174,22 @@ Figure \ref{Sender} shows the sender view. The prototype deviates from the desig
 The back-end is used to store and process all information as requested by the users. In its current form of the project the user information is stored on the database, information may be added to the database from form submissions on the user pages, this includes the submission of a pick-up requests with the relevant delivery details and the user been able to track a package. The information is sent from the webpage to the server. The server then processes the data and returns user specific information.
 
 
-\section{Responsibility of each pair of students}
+\section{Current implementation responsibility of each pair of students}
 
 \subsection{	BACK--END : Linda, Phumzile}
 
 
 \begin{itemize}
-	\item  make a database and populate it
+	\item  make a database and populate it - Linda
 	\item  implement algorithms which can calculate things related to the front end, such as:
 		\begin{itemize}
-		 \item scheduling
-		\item capacity
-		\item goods transferred/pickup 
+		\item packing algorithm - Phumzile
 		\end{itemize}
-	\item set up a server
-	\item link database to server
-	\item	link front end to server
-	\item	write unit tests  
+	\item set up a server		- Phumzile
+	\item link database to server	- Linda
+	\item	link front end to server - Linda
+
 \end{itemize}
-
-
 
 
 \subsection{	FRONT END : Kessigan, Sheena}
@@ -214,24 +198,21 @@ The back-end is used to store and process all information as requested by the us
 	\item  Make user interfaces for the different users
 
 		\begin{itemize}
-		 \item Choose a bootstrap template and make minor modifications
-		\item Plot the views and visualisations using JavaScript libraries such as d3, google charts, am charts on the template Users: For each user there is a User Interface based on the design:
+		 \item Choose a bootstrap template and make minor modifications - Sheena
 		
-		\begin{itemize}
-		\item Program
-		\item scheduling
-		\item Dispatcher (inputs the variables so the algorithms can run and return a result)
-		\item capacity
-					\item goods transferred/pickup
-					\item location
-				\item Truck driver
-					\item schedule
-					\item goods transferred/pickup
-					\item location
+		\item Dispatcher (inputs the variables so the algorithms can run and return a result) - Kessigan
+		\item Driver Page:		
+			\begin{itemize} 
+		\item location - Kessigan
+																
+					\item schedule	- Sheena
+					\item goods transferred/pickup - Kessigan
+					\item location - Sheena
 		\end{itemize}
 		
 		\end{itemize}
-	\item Write unit tests 
+	
+	
 \end{itemize}
 
 
