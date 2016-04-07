@@ -13,6 +13,9 @@ import authenticateUsers
 def sender(request):
 	return render_to_response("sender.html", RequestContext(request))
 	
+def dispatcher(request):
+	return render_to_response("dispatcher.html", RequestContext(request))
+	
 def receiver(request):
 	html_to_load = "login.html"
 	designation = "unknown"

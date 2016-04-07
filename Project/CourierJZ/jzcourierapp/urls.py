@@ -10,6 +10,7 @@ urlpatterns = [
 	url(r'^main', views.main, name='main'),
 	url(r'^login_sender', views.login_sender, name='login_sender'),
 	url(r'^login_receiver', views.login_receiver, name='login_receiver'),
-#	url(r'^login_ceo', views.login_ceo, name='login_ceo'),
-#	url(r'^login_driver', views.login_driver, name='login_driver'),
+	#url(r'^login_ceo', views.login_ceo, name='login_ceo'),
+	#url(r'^login_driver', views.login_driver, name='login_driver'),
+	url(r'^dispatcher', views.dispatcher, name='dispatcher'),
 ]
