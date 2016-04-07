@@ -1,0 +1,101 @@
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{School of Electrical \& Information Engineering, University of the
+Witwatersrand, Private Bag 3, 2050, Johannesburg, South Africa} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Product backlog \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+\maketitle % Print the title
+
+
+
+\begin{table}[]
+\centering
+\caption{Product Backlog}
+\label{my-label}
+\begin{tabular}{|p{1cm}|p{8cm}|p{2cm}|p{1.2cm}|p{1.5cm}|}
+\hline
+\textbf{ID} & \textbf{Story}                                                                                         & \textbf{Estimate} & \textbf{Priority} & \textbf{Doing} \\ \hline
+1           & As a sender I need to be able to create an account                                                     & 10                & 1                 &                \\ \hline
+2           & As a sender I need to be able to log in to my account                                                  & 2                 & 2                 &                \\ \hline
+3           & As a sender I need to input the dimensions of my package                                               & 2                 & 3                 &                \\ \hline
+4           & As a sender I want to input my details                                                                 & 3                 & 4                 &                \\ \hline
+5           & As a sender I want to input the receiver's details                                                     & 2                 & 5                 &                \\ \hline
+6           & As a sender I need to be able to pay for the services                                                  & 5                 & 6                 &                \\ \hline
+7           & As a fleet assigment manager I need to be able run a route generation algorithm                        & 5                 & 7                 &                \\ \hline
+8           & As a fleet assigment manager I need to see a list of packages in the depot                             & 1                 & 8                 &                \\ \hline
+9           & As a driver I should be able to log in to my account                                                   & 1                 & 9                 &                \\ \hline
+10          & As a driver I want to pick a vehicle and a route                                                       & 10                & 10                &                \\ \hline
+11          & As a driver I need to see the contact details of my next delivery / pickup                             & 2                 & 11                &                \\ \hline
+12          & As a driver I want to check off the packages I drop off / pickup                                       & 3                 & 12                &                \\ \hline
+13          & As a sender I need to know when the parcel will be picked up                                           & 1                 & 13                &                \\ \hline
+14          & As a sender I need to be able to know when the package will be delivered                               & 3                 & 14                &                \\ \hline
+15          & As a receiver I need to receive a notification of the intended delivery                                & 1.5               & 15                &                \\ \hline
+16          & As a receiver I need to check the estimated time of delivery                                           & 1                 & 16                &                \\ \hline
+17          & As the CEO I want to see statistics on the clients                                                     & 4                 & 17                &                \\ \hline
+18          & As the CEO I want to see statistics on the drivers                                                     & 4                 & 18                &                \\ \hline
+19          & As the Vehicle Maintenance Manager I want to see vehicle statistics such as mileage                    & 6                 & 19                &                \\ \hline
+20          & As the Vehicle Maintenance Manager I want to schedule the maintenance of vehicles                      & 5                 & 20                &                \\ \hline
+21          & As the Accounts Officer I want to see the list of payments made (for bookeeping purposes)              & 6                 & 21                &                \\ \hline
+22          & As the Accounts Officer I need to see a list of vehicle maintenance payments (for bookeeping purposes) & 5                 & 22                &                \\ \hline
+23          & As the CEO I want to generate reports on income                                                        & 5                 & 23                &                \\ \hline
+24          & As the CEO I want to generate reports on expenditure                                                   & 5                 & 24                &                \\ \hline
+25          & As a driver I want to be able to request a day off                                                     & 6                 & 25                &                \\ \hline
+26          & As a driver I should be able to log out of my account                                                  & 1                 & 26                &                \\ \hline
+27          & As a sender I need to be able to log out of my account                                                 & 1                 & 27                &                \\ \hline
+28          & As the Vehicle Maintenance Manager I want to see vehicle statistics such as fuel consumption           & 5                 & 28                &                \\ \hline
+            &                                                                                                        & 105.5             &                   &                \\ \hline
+\end{tabular}
+\end{table}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
