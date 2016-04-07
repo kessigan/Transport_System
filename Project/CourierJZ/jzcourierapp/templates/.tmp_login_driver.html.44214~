@@ -89,10 +89,15 @@
     <!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="{% static 'lib/startbootstrap-sb-admin-2-1.0.8/dist/js/sb-admin-2.js' %}"></script>
 	<script type="text/javascript" src="{% static 'lib/jquery.cookie.js' %}"></script>
+	  
 	  <script>
-
-
+		
+		
+		
 		$("#login").click(function(e){
+		window.location.href = '../courier/driver';
+		
+			
 		var email1 = document.getElementById("emailid").value;
 		
 		var password1 = document.getElementById("passwordid").value;
@@ -114,12 +119,19 @@
 										
 										
 										
-		$.post("../courier/login",{
+		$.post("../courier/driver",{
 			email:email1,
 			password:password1
-		});
+		}
+		);
 		
 		});
+	
+		
+	
+		
+//window.location.href = '../courier/driver';		
+		
 	  
 	  </script>
 

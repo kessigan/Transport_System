@@ -91,13 +91,13 @@
 	<script type="text/javascript" src="{% static 'lib/jquery.cookie.js' %}"></script>
 	  
 	  <script>
-		designation = "unknown";
-		designation = {{designation_loading|safe}};
-		designation = designation[0];
-		console.log(designation);
+		
 		
 		
 		$("#login").click(function(e){
+		window.location.href = '../courier/driver';
+		
+			
 		var email1 = document.getElementById("emailid").value;
 		
 		var password1 = document.getElementById("passwordid").value;
@@ -119,24 +119,18 @@
 										
 										
 										
-		$.post("../courier/login",{
+		$.post("../courier/driver",{
 			email:email1,
 			password:password1
 		}
 		);
 		
 		});
+	
 		
+	
 		
-//		if(designation != "unknown")
-//		{
-//			console.log("about to post");
-//			$.post("../courier/"+ designation,{
-//		}
-//		);
-		
-window.location.href = '../courier/driver';		
-		}
+//window.location.href = '../courier/driver';		
 		
 	  
 	  </script>

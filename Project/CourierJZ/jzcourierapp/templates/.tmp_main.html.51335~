@@ -63,22 +63,22 @@
                                 <div class="tab-pane fade in active" id="home-pills">
                                     <h4>Receiver</h4>
                                     <p>Click the link below to view details on the package to be recieved</p>
-									<a href="login_receiver.html" class="btn btn-lg btn-success btn-block">Receiver Login</a>
+									<a href="../courier/login_receiver" class="btn btn-lg btn-success btn-block">Receiver Login</a>
                                 </div>
                                 <div class="tab-pane fade" id="profile-pills">
                                     <h4>Sender</h4>
                                     <p>Click the link below to send a new package or view the details of a package been sent</p>
-									<a href="login_sender.html" class="btn btn-lg btn-success btn-block">Sender Login</a>
+									<a href="../courier/login_sender" class="btn btn-lg btn-success btn-block">Sender Login</a>
                                 </div>
                                 <div class="tab-pane fade" id="messages-pills">
                                     <h4>Driver</h4>
                                     <p>Click the link below to pick a driving route and view the details of pick-ups and deliveries </p>
-									<a href="login_driver.html" class="btn btn-lg btn-success btn-block">Driver Login</a>
+									<a href="../courier/login_driver" class="btn btn-lg btn-success btn-block">Driver Login</a>
                                 </div>
                                 <div class="tab-pane fade" id="settings-pills">
-                                    <h4>CEO</h4>
-                                    <p>Click the link below to veiw reports on income, expenditure, most overworked driver, most served customer, etc. </p>
-									<a href="login_ceo.html" class="btn btn-lg btn-success btn-block">CEO Login</a>
+                                    <h4>Dispacher</h4>
+                                    <p>Click the link below to organise the deliveries and see a summary of the packages to be collected or delivered </p>
+									<a href="../courier/login_ceo" class="btn btn-lg btn-success btn-block">CEO Login</a>
                                 </div>
                             </div>
                     </div>

@@ -254,13 +254,21 @@
 	
 		designation = "unknown";
 		designation = {{designation_loading|safe}};
+		console.log(designation);
 		designation = designation[0];
 		console.log(designation);
 	
 	if(designation == "allow")
 	{
-			
+			alert("you are allowed");
 	}
+	
+	else
+	{
+		alert("not allowed");
+		window.location.href = '../courier/loginreceiver';
+	}
+	
 		
 		
 

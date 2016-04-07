@@ -41,6 +41,21 @@ def authenticateUser(user,password):
 
 	return is_user1, designation
 	
+def writeVerdictToCSVFile(is_true):
+	with open('allow_login.csv', 'wb') as csvfile:
+		loginwriter = csv.writer(csvfile)
+		
+		loginwriter.writerow([is_true])
+		
+def readVerdictFromCSVFile():
+	verdict = ""
+	with open('allow_login.csv', 'rb') as csvfile:
+		loginreader = csv.reader(csvfile)
+		
+		for row in loginreader:
+			verdict = row		
+	return verdict
+	
 
 
 		

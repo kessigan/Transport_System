@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Dispatcher</title>
 
 	{% load staticfiles %}
 
@@ -91,17 +91,10 @@
 	<script type="text/javascript" src="{% static 'lib/jquery.cookie.js' %}"></script>
 	  
 	  <script>
-		
-		
+	
 		
 		$("#login").click(function(e){
-		
-		console.log("about to take you to a different page LLLL ");
-		window.location.href = '../courier/receiver';
-//		window.location.href = 'https://www.sharelatex.com/learn/Line_breaks_and_blank_spaces';
-		
-		
-		
+			window.location.href = '../courier/dispatcher';
 		var email1 = document.getElementById("emailid").value;
 		
 		var password1 = document.getElementById("passwordid").value;
@@ -123,15 +116,13 @@
 										
 										
 										
-		$.post("../courier/receiver",{
+		$.post("../courier/dispatcher",{
 			email:email1,
 			password:password1
 		}
 		);
 		
 		});
-		
-		
 		
 		
 		

@@ -9,40 +9,75 @@ import authenticateUsers
 # Create your views here.
 
 
-
+@ensure_csrf_cookie	
 def sender(request):
-	return render_to_response("sender.html", RequestContext(request))
-	
-def dispatcher(request):
-	return render_to_response("dispatcher.html", RequestContext(request))
-	
-def receiver(request):
-	html_to_load = "login.html"
 	designation = "unknown"
 	designation1 = []
-	
-	print request.POST
-	
+		
 	if("email" in request.POST and "password" in request.POST ):
 		email = request.POST["email"]
 		password = request.POST["password"]
 	
 		#check if the user that is trying to log in is an authenticated user
 		is_user,designation = authenticateUsers.authenticateUser(email,password)
-		designation1 = [is_user]
-		print "i'll be over here"
-		print(is_user)
-		print(designation)
-		
-		if designation == "driver":
-			html_to_load = "receiver.html"
-		elif designation == "sender":
-			html_to_load = "sender.html"
-			
-	return render_to_response("receiver.html", {"designation_loading":designation1}, RequestContext(request))
+		print is_user
+		authenticateUsers.writeVerdictToCSVFile(is_user)
+
+	designation = authenticateUsers.readVerdictFromCSVFile()
+	return render_to_response("sender.html", {"designation_loading":designation}, RequestContext(request))
 	
+@ensure_csrf_cookie	
+def dispatcher(request):
+	designation = "unknown"
+	designation1 = []
+		
+	if("email" in request.POST and "password" in request.POST ):
+		email = request.POST["email"]
+		password = request.POST["password"]
+	
+		#check if the user that is trying to log in is an authenticated user
+		is_user,designation = authenticateUsers.authenticateUser(email,password)
+		print is_user
+		authenticateUsers.writeVerdictToCSVFile(is_user)
+
+	designation = authenticateUsers.readVerdictFromCSVFile()
+	return render_to_response("dispatcher.html", {"designation_loading":designation}, RequestContext(request))
+
+
+@ensure_csrf_cookie		
+def receiver(request):
+	designation = "unknown"
+	designation1 = []
+		
+	if("email" in request.POST and "password" in request.POST ):
+		email = request.POST["email"]
+		password = request.POST["password"]
+	
+		#check if the user that is trying to log in is an authenticated user
+		is_user,designation = authenticateUsers.authenticateUser(email,password)
+		
+		authenticateUsers.writeVerdictToCSVFile(is_user)
+
+	designation = authenticateUsers.readVerdictFromCSVFile()
+	
+	return render_to_response("receiver.html", {"designation_loading":designation}, RequestContext(request))
+
+@ensure_csrf_cookie		
 def driver(request):
-	return render_to_response("driver.html", RequestContext(request))
+	designation = "unknown"
+	designation1 = []
+		
+	if("email" in request.POST and "password" in request.POST ):
+		email = request.POST["email"]
+		password = request.POST["password"]
+	
+		#check if the user that is trying to log in is an authenticated user
+		is_user,designation = authenticateUsers.authenticateUser(email,password)
+		print is_user
+		authenticateUsers.writeVerdictToCSVFile(is_user)
+
+	designation = authenticateUsers.readVerdictFromCSVFile()
+	return render_to_response("driver.html", {"designation_loading":designation}, RequestContext(request))
 	
 def main(request):
 	return render_to_response("main.html", RequestContext(request))
@@ -55,38 +90,13 @@ def login_receiver(request):
 	return render_to_response("login_receiver.html", {}, RequestContext(request))
 	
 	
-#def login_driver(request):
-#	return render_to_response("login_driver.html", RequestContext(request))
+def login_driver(request):
+	return render_to_response("login_driver.html", RequestContext(request))
 	
-#def login_ceo(request):
-#	return render_to_response("ceo_sender.html", RequestContext(request))
+def login_ceo(request):
+	return render_to_response("login_ceo.html", RequestContext(request))
 
 #@csrf_protect
-@ensure_csrf_cookie
-def login(request):
-	print "HERE HERE"
-	html_to_load = "login.html"
-	designation = "unknown"
-	designation1 = []
-	
-	print request.POST
-	
-	if("email" in request.POST and "password" in request.POST ):
-		email = request.POST["email"]
-		password = request.POST["password"]
-	
-		#check if the user that is trying to log in is an authenticated user
-		is_user,designation = authenticateUsers.authenticateUser(email,password)
-		designation1 = [designation]
-		print "i'll be over here"
-		print(is_user)
-		print(designation)
-		
-		if designation == "driver":
-			html_to_load = "receiver.html"
-		elif designation == "sender":
-			html_to_load = "sender.html"
-			
-	print (html_to_load)
-	return render_to_response("login.html", {"designation_loading":designation1}, RequestContext(request))
-	
+def login_dispatcher(request):
+	return render_to_response("login_dispatcher.html", RequestContext(request))
+

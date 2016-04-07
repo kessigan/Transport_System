@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sender</title>
+    <title>Dispatcher</title>
 	{% load staticfiles %}
 
     <!-- Bootstrap Core CSS -->
@@ -34,19 +34,31 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<script>
-											
-		function myFunction() {
-		var email1 = document.getElementById("heightid").value;
-		var email2 = document.getElementById("widthid").value;
-		var email3 = document.getElementById("lengthid").value;
-		alert("The total cost of delivery will be R" + email1 * email2 * email3);
-		};
-											
-	</script>
+	    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
 
-											
+		table_data = [
+          ['Mike',  {v: 10000, f: '$10,000'}, true],
+          ['Jim',   {v:8000,   f: '$8,000'},  false],
+          ['Alice', {v: 12500, f: '$12,500'}, true],
+          ['Bob',   {v: 7000,  f: '$7,000'},  true]
+        ];
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Salary');
+        data.addColumn('boolean', 'Full Time Employee');
+        data.addRows(table_data);
 
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
+	
+	
 
 </head>
 
@@ -63,7 +75,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../courier/receiver">Receiver</a>
+                <a class="navbar-brand" href="../courier/receiver">dispatcher</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -81,7 +93,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="{% static 'lib\startbootstrap-sb-admin-2-1.0.8\pages\login.html' %}"><i class="fa fa-sign-out fa-fw"></i> Logout</a> 
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -186,7 +198,7 @@
                                     <a href="blank.html">Blank Page</a>
                                 </li>
                                 <li>
-                                    <a href="{% static 'lib\startbootstrap-sb-admin-2-1.0.8\pages' %}"/>Login Page</a> 
+                                    <a href="login.html">Login Page</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -201,68 +213,78 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Sender</h1>
+                    <h1 class="page-header">Dispatcher</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+            
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Send a package
+                           List of Packages in Storage
+                            
                         </div>
+                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <form role="form">
-                                        <div class="form-group">
-										
-                                            <label>Package size</label>
-                                            <input type="text" placeholder="length(cm)" id="lengthid">
-											<input type="text" placeholder="Width(cm)" id="widthid">
-                                            <input type="text" placeholder="Height(cm)" id="heightid">
-                                            <p class="help-block">Delivery is charged at R1 per a square centimetre</p>
-											<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction()">Calculate Price </div>
-	
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Reciever Name</label>
-                                            <input class="form-control" placeholder="Enter text" id="receiverid">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Receiver Address</label>
-                                            <input class="form-control" placeholder="Line 1" id="line1id">
-											<input class="form-control" placeholder="Line 2" id="line2id">
-											<input class="form-control" placeholder="Line 3" id="line3id">
-											<input class="form-control" placeholder="Area Code" id="areaid">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Reciever Cell Number</label>
-                                            <input class="form-control" placeholder="Enter text" id="cellid">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Special Instructions</label>
-                                            <input class="form-control" placeholder="Enter text" id="instructionsid">
-                                        </div>
-
-										<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction1()">Send and pay </div>
-                                    </form>
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
+                         <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <!-- /.row (nested) -->
+                            <!-- /.table-responsive -->
+                        </div>   
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                         List of Packages for Pickup
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" id="table_div">
+							<div class="panel-body">
+								
+                        </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
+					<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction()">Run Allocation Algorithm </div>  
                 </div>
-                
+                <!-- /.col-lg-8 -->
+              
             </div>
-            <!-- /.row -->
-            
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
@@ -287,83 +309,6 @@
     <!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="{% static 'lib/startbootstrap-sb-admin-2-1.0.8/dist/js/sb-admin-2.js' %}"></script>
 
-	<script>
-		
-		designation = "unknown";
-	designation = {{designation_loading|safe}};
-	console.log(designation);
-	designation = designation[0];
-	console.log(designation);
-	
-	if(designation == "allow")
-	{
-			alert("you are allowed");
-	}
-	
-	else
-	{
-		alert("not allowed");
-		window.location.href = '../courier/loginsender';
-	}
-
-		function myFunction1() {
-		console.log("i am here");
-		var lengthid1 = document.getElementById("lengthid").value;
-		var widthid1 = document.getElementById("widthid").value;
-		var heightid1 = document.getElementById("heightid").value;
-		var receiverid1 = document.getElementById("receiverid").value;
-		var line1id1 = document.getElementById("line1id").value;
-		var line2id1 = document.getElementById("line2id").value;
-		var line3id1 = document.getElementById("line3id").value;
-		var areaid1 = document.getElementById("areaid").value;
-		var cellid1 = document.getElementById("cellid").value;
-		var instructionsid1 = document.getElementById("instructionsid").value;
-		
-		//console.log(trackingid1);
-		
-		
-		var csrftoken = $.cookie('csrftoken');
-
-										function csrfSafeMethod(method) {
-										    // these HTTP methods do not require CSRF protection
-										    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
-										}
-
-										$.ajaxSetup({
-										    beforeSend: function(xhr, settings) {
-										        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-										            xhr.setRequestHeader("X-CSRFToken", csrftoken);
-										        }
-										    }
-										});
-																
-										
-		$.post("../courier/login",{
-			length:lengthid1,
-			width:widthid1,
-			height:heightid1,
-			receiver:receiverid1,
-			line1:line1id1,
-			line2:line2id1,
-			line3:line3id1,
-			area:areaid1,
-			cell:cellid1,
-			instrustions:instructionsid1,
-		}
-		);
-		
-		};
-		
-		
-//		if(designation != "unknown")
-//		{
-//			console.log("about to post");
-//			$.post("../courier/"+ designation,{
-//		}
-//		);
-	//	}
-
-	</script>
 </body>
 
 </html>

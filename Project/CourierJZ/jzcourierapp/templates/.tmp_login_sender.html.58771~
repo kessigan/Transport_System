@@ -98,7 +98,6 @@
 		
 		
 		$("#login").click(function(e){
-			console.log("i am here");
 		var email1 = document.getElementById("emailid").value;
 		
 		var password1 = document.getElementById("passwordid").value;
@@ -136,7 +135,7 @@
 //		}
 //		);
 		
-		
+window.location.href = '../courier/sender';		
 		}
 		
 	  
