@@ -81,7 +81,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="{% static 'lib\startbootstrap-sb-admin-2-1.0.8\pages\login.html' %}"><i class="fa fa-sign-out fa-fw"></i> Logout</a> 
+                        <li><a href="../courier/main"><i class="fa fa-sign-out fa-fw"></i> Logout</a> 
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -107,90 +107,7 @@
                         <li>
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'lib/startbootstrap-sb-admin-2-1.0.8/pages/buttons.html' %}">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'lib\startbootstrap-sb-admin-2-1.0.8\pages' %}"/>Login Page</a> 
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -214,15 +131,26 @@
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-lg-8">
+								<div class="col-lg-10">
                                     <form role="form">
+										
                                         <div class="form-group">
 										
                                             <label>Package size</label>
-                                            <input type="text" placeholder="length(cm)" id="lengthid">
-											<input type="text" placeholder="Width(cm)" id="widthid">
-                                            <input type="text" placeholder="Height(cm)" id="heightid">
-                                            <p class="help-block">Delivery is charged at R1 per a square centimetre</p>
+											
+											<div class="row">
+											<div class="col-lg-3">
+                                            <input class="form-control" type="number" placeholder="length(cm)" id="lengthid">
+											</div>
+											<div class="col-lg-3">
+											<input class="form-control" type="number" placeholder="Width(cm)" id="widthid">
+											</div>
+											<div class="col-lg-3">
+                                            <input class="form-control" type="number" placeholder="Height(cm)" id="heightid">
+                                            </div>
+											</div>
+											
+											<p class="help-block">Delivery is charged at R1 per a square centimetre</p>
 											<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction()">Calculate Price </div>
 	
                                         </div>
@@ -232,14 +160,14 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Receiver Address</label>
-                                            <input class="form-control" placeholder="Line 1" id="line1id">
+                                            <input class="form-control col-md-8" placeholder="Line 1" id="line1id">
 											<input class="form-control" placeholder="Line 2" id="line2id">
 											<input class="form-control" placeholder="Line 3" id="line3id">
 											<input class="form-control" placeholder="Area Code" id="areaid">
                                         </div>
                                         <div class="form-group">
                                             <label>Reciever Cell Number</label>
-                                            <input class="form-control" placeholder="Enter text" id="cellid">
+                                            <input class="form-control" type="number" placeholder="Enter cell number" id="cellid">
                                         </div>
                                         <div class="form-group">
                                             <label>Special Instructions</label>
@@ -247,6 +175,7 @@
                                         </div>
 
 										<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction1()">Send and pay </div>
+										
                                     </form>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->
