@@ -6,6 +6,7 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 
 import authenticateUsers
 import time
+import readDatabase
 
 # Create your views here.
 
@@ -22,8 +23,7 @@ def sender(request):
 	
 		#check if the user that is trying to log in is an authenticated user
 		is_user,designation = authenticateUsers.authenticateUser(email,password,user_type)
-		print "AFTER THE DESIGNATION SCRIPT"
-		print is_user
+		
 		authenticateUsers.writeVerdictToCSVFile(is_user)
 
 	designation = authenticateUsers.readVerdictFromCSVFile()
@@ -41,12 +41,15 @@ def dispatcher(request):
 	
 		#check if the user that is trying to log in is an authenticated user
 		is_user,designation = authenticateUsers.authenticateUser(email,password,user_type)
-		print "AFTER THE DESIGNATION SCRIPT"
-		print is_user
+		
 		authenticateUsers.writeVerdictToCSVFile(is_user)
 
 	designation = authenticateUsers.readVerdictFromCSVFile()
-	return render_to_response("dispatcher.html", {"designation_loading":designation}, RequestContext(request))
+	
+	#send the tables data 
+	pickup_table, storage_table = readDatabase.readThePackages()
+	
+	return render_to_response("dispatcher.html", {"designation_loading":designation, "pickup_table":pickup_table, "storage_table":storage_table}, RequestContext(request))
 
 
 @ensure_csrf_cookie		
@@ -61,8 +64,7 @@ def receiver(request):
 	
 		#check if the user that is trying to log in is an authenticated user
 		is_user,designation = authenticateUsers.authenticateUser(email,password,user_type)
-		print "AFTER THE DESIGNATION SCRIPT"
-		print is_user
+		
 		
 		authenticateUsers.writeVerdictToCSVFile(is_user)
 
@@ -82,12 +84,11 @@ def driver(request):
 	
 		#check if the user that is trying to log in is an authenticated user
 		is_user,designation = authenticateUsers.authenticateUser(email,password,user_type)
-		print "AFTER THE DESIGNATION SCRIPT"
-		print is_user
+		
 		authenticateUsers.writeVerdictToCSVFile(is_user)
 
 	designation = authenticateUsers.readVerdictFromCSVFile()
-	print "AFTER READING FROM FILE", designation
+	
 	return render_to_response("driver.html", {"designation_loading":designation}, RequestContext(request))
 	
 def main(request):

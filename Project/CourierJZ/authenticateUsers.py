@@ -1,5 +1,6 @@
 import csv
 import readDatabase
+import collections
 
 def convert(data):
     if isinstance(data, basestring):
