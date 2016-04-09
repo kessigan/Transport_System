@@ -23,9 +23,7 @@ def checkIfUserIsInList(list_of_all_users,user,password,user_type):
 	designation = "unknown"
 	
 	for user_data in list_of_all_users:
-		print "THE DATA CHECK"
-		print convert(user_data[0])
-		print convert(user_data[1])
+		
 		if user == convert(user_data[0]):
 			if password == convert(user_data[1]):
 				return_val =  True

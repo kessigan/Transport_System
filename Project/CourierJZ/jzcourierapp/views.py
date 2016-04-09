@@ -57,6 +57,8 @@ def receiver(request):
 	designation = "unknown"
 	designation1 = []
 	user_type = "receiver"
+	
+	print request.POST
 		
 	if("email" in request.POST and "password" in request.POST ):
 		email = request.POST["email"]
@@ -69,6 +71,12 @@ def receiver(request):
 		authenticateUsers.writeVerdictToCSVFile(is_user)
 
 	designation = authenticateUsers.readVerdictFromCSVFile()
+	
+	#receive the tracking id that needs to be recovered from the db
+	
+	if("tracking" in request.POST ):
+		track_id = request.POST["trackingid"] 
+		print track_id
 	
 	return render_to_response("receiver.html", {"designation_loading":designation}, RequestContext(request))
 
