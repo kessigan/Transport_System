@@ -67,9 +67,8 @@
 
 \subsection{Purpose}
 
-This document details the software requirements specifications for the Fleet of delivery and pick-up Vehicle Management System project. Template A.5 from the IEEE Recommended Practice for Software Requirements Specifications has been selected. 
-The purpose of this project is to enable monitoring of all aspects of a fleet of delivery and pickup vehicle management system via a browser based management system. The system will allow streamlining of services as any action carried out by any stakeholders will be captured and monitored on the management system. Depending on the user; users will be able to view work schedules, routes and package progress among other things. The system will also provide database functionality. 
-In overall, the aim of the project is to make the processes involved in a fleet of delivery vehicles more efficient, transparent and easy to monitor remotely whilst allowing clients to track their packages. 
+This document details the software requirements specifications for the Vehicle Management fleet project. Template A.5 from the IEEE Recommended Practice for Software Requirements Specifications has been selected. 
+The purpose of this project is to enable monitoring of all aspects of the vehicle fleet by means of a  browser based management system. The system will allow streamlining of services as any action carried out by any stakeholders will be captured and monitored on the management system. Depending on the user; users will be able to view work schedules, routes and package progress amongst other things. The system will also provide database functionality. The aim of the project is to make the processes involved in a fleet of delivery vehicles more efficient, transparent and easy to monitor remotely whilst allowing clients to track their packages. 
 
 \subsection{Intended Audience and Reading Suggestions}
 This document is aimed at:
@@ -83,7 +82,7 @@ This document is aimed at:
 \end{itemize}
 
 \subsection{Project Scope}
-The end product will be a browser based application which will implement the features described in Section 3 under system features. The product will not be available as a phone application therefore mobile users should log in to their browsers to access the product. 
+The end product will be a browser based application which will implement the features described in Section 3 under system features. The product will accessible to anyone who has access to the internet. 
 
 \subsection{References}
 See the enhanced project description available from the course Sakai page.
@@ -91,7 +90,7 @@ See the enhanced project description available from the course Sakai page.
 
 \section{External interface requirements}
 \subsection{User interfaces}
-Five users of the system have been identified. Namely, the driver, the dispatcher, the manager, a sender and a receiver.
+Various users of the system have been identified. Namely, the driver, the dispatcher, the manager, a sender, a receiver, the accounts officer, the CEO, the operational officer, the system administrator and the vehicle maintenance officer.
 
 \subsubsection{The driver interface/view}
 \begin{figure}[ht!]
@@ -105,7 +104,7 @@ Five users of the system have been identified. Namely, the driver, the dispatche
 The following figure shows you the dispatcher view before the dispatcher runs the algorithm to assign packages to drivers and routes.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=5in]{pictures/dispatcherBefore.png}
+\includegraphics[width=3.5in]{pictures/dispatcherBefore.png}
 \caption{The dispatcher interface before running the allocation algorithm}
 \label{DispatcherBefore}
 \end{figure}
@@ -116,15 +115,6 @@ The following figure shows you the dispatcher view after the dispatcher runs the
 \includegraphics[width=3.5in]{pictures/dispatcher.png}
 \caption{The dispatcher interface}
 \label{Dispatcher}
-\end{figure}
-
-\subsubsection{The manager view}
-Figure \ref{Manager} shows the view the manager sees when they log into the system. 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=3.5in]{pictures/manager.png}
-\caption{The manager interface}
-\label{Manager}
 \end{figure}
 
 
@@ -155,6 +145,50 @@ Figure \ref{Sender} shows the sender view.
 \label{Sender}
 \end{figure}
 
+\subsubsection{The Accounts officer view}
+Figure \ref{Sender} shows the Accounts officer view.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.5in]{pictures/accounts.png}
+\caption{The accounts officer interface}
+\label{Sender}
+\end{figure}
+
+\subsubsection{The CEO view}
+Figure \ref{Sender} shows the CEO view.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.5in]{pictures/CEO.png}
+\caption{The CEO view}
+\label{Sender}
+\end{figure}
+
+\subsubsection{The Operational officer view}
+Figure \ref{Sender} shows the Operational officer view.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.5in]{pictures/operational.png}
+\caption{The operational officer interface}
+\label{Sender}
+\end{figure}
+
+\subsubsection{The system administrator view}
+Figure \ref{Sender} shows the system administrator view.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.5in]{pictures/admin.png}
+\caption{The system administrator interface}
+\label{Sender}
+\end{figure}
+
+\subsubsection{The Vehicle maintenance view}
+Figure \ref{Sender} shows the vehicle maintenance view.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.5in]{pictures/vehicle.png}
+\caption{The vehicle maintenance manager interface}
+\label{Sender}
+\end{figure}
 
 \subsection{Hardware interfaces}
 \begin{itemize}
@@ -163,13 +197,14 @@ Figure \ref{Sender} shows the sender view.
 
 \subsection{Software interfaces}
 	\begin{itemize}
-		\item Chrome or Firefox web browser enabled on device
+		\item Latest version of preferred web browser, preferably Chrome.
 	\end{itemize}
 \subsection{Communication interfaces}
 	\begin{itemize}
 		\item Internet connection
 		\item Email notifications
 		\item Telephone calls
+		\item SMS notification
 	\end{itemize}
 
 \section{System Features}
@@ -178,7 +213,7 @@ Figure \ref{Sender} shows the sender view.
 \subsection{Tracking of parcels}
 \subsubsection{Introduction/Purpose of feature}
 
-Parcel tracking enables the manager of the depot to see the status and locations of all parcels to be collected or delivered. This can be useful for when parcels go missing and they need to be found as the parcel would have been lost after its last known location. Parcel tracking also helps the dispatchers ensure that the correct parcels are in the correct vehicles so that deliveries can be made in the shortest possible time. The customers also benefit from this feature as they may track the parcel from its waybill number.
+Parcel tracking enables the manager of the depot to see the status and locations of all parcels to be collected or delivered. This can be useful for when parcels go missing and they need to be found as the parcel would have been lost after its last known location. Parcel tracking also helps the dispatchers ensure that the correct parcels are in the correct vehicles so that deliveries can be made in the shortest possible time. The customers also benefit from this feature as they may track the parcel from its tracking number.
 \subsubsection{Stimulus/Response Sequence}
 The parcel is given its location  from its point of origin, this is the pick up point that is logged when a driver firsts collects the parcel. The second location of all parcels will be the dispatch warehouse where parcels are stored and sorted. The parcel will then be sent to a delivery vehicle. As the delivery vehicle makes collections/deliveries, the parcels location will be updated. 
 \subsubsection{Associated Functional requirements}
@@ -260,7 +295,7 @@ Depending on the route a package has been allocated to it will be assigned a dat
 
 \subsection{Store payment information}
 \subsubsection{Introduction/Purpose of feature}
-In order for a user to actually complete the process of being able to send a parcel they will first have to create an account. When an account is created, the user has to store their payment details.
+In order for a user to complete the process of being able to send a parcel they will first have to create an account. When an account is created, the user has to store their payment details.
 \subsubsection{Stimulus/Response Sequence}
 \begin{itemize}
 			\item The sender presses on the button create an account 
@@ -269,16 +304,16 @@ In order for a user to actually complete the process of being able to send a par
 \end{itemize}
 	
 \subsubsection{Associated Functional requirements}
-This has to be done before a sender can actually send anything. A database has to be created which can store all the information
+This has to be done before a sender can send anything. A database has to be created which can store all the information
 
 \subsection{Store client details}
 \subsubsection{Introduction/Purpose of feature}
-In order for a user to actually complete the process of being able to send a parcel they will first have to create an account. When an account is created, the user has to store their personal details.
+In order for a user to complete the process of being able to send a parcel they will first have to create an account. When an account is created, the user has to store their personal details.
 \subsubsection{Stimulus/Response Sequence}
 \begin{itemize}
 			\item The sender presses on the button create an account
 			\item The sender then enters all their information 
-			\item The sender then presses the button submit which creates an account 
+			\item The sender then presses the submit button which creates an account 
 \end{itemize}
 	
 
@@ -287,13 +322,15 @@ This has to be done before a sender can actually send anything. A database has t
 
 \subsection{Package Storage and Package Identification}
 \subsubsection{Introduction/Purpose of feature}
-This feature captures the data of the packages, when a sender sends a request for the package to be collected and after payment has taken place this feature will allocate a package number that will be used as the package identifier for the sender and the receiver and will allow both the sender and receiver to track the package. It also calculates the available space in the storehouse, to calculate the estimated time of pick up since it will depend on the backlog storehouse.
+
+Each package is given a unique tracking ID when the sender requests a pick up. This tracking ID is used to identify the package through its various stages i.e. storage or delivery.
+
+
 \subsubsection{Stimulus/Response Sequence}
 \begin{itemize}
-\item The sender enters the package details then press submit.
-\item The sender enters their address then press submit.
-\item The sender enters the receiver's address then press submit.
-\item The sender creates an account for payment.
+\item The sender enters and submits the package details.
+\item The sender enters and submits the receiver's address.
+\item The sender is charged on submission.
 \end{itemize}
 \subsubsection{Associated Functional requirements}
 \begin{itemize}
@@ -306,17 +343,17 @@ This feature captures the data of the packages, when a sender sends a request fo
 \subsection{Send automated email notifications to clients}
 \subsubsection{Introduction/Purpose of feature}
 
-To notify the receiver that a package will be delivered to them and to send the link to the webpage that will show the receiver an estimated time of arrival of the package sent to them.
+A tracking ID is sent to the receiver via email. The tracking number can be used to view information on location and status of the package.
 
 \subsubsection{Stimulus/Response Sequence}
 \begin{itemize}
 \item The client needs to click on the web link sent to them via email to access the receiver dashboard.
-Enter their package number and press submit
+\item Enter their tracking ID and submit.
 \end{itemize}
 \subsubsection{Associated Functional requirements}
 \begin{itemize}
-\item Package storage and identification functionality
-All sender functionalities must work before the receiver can receive anything
+\item Package storage and identification.
+All sender functionality must work before the receiver functionality can be implemented.
 \end{itemize}
 
 \subsection{Inventory management}
@@ -362,10 +399,12 @@ In order to establish the reliability of the software at a time of delivery, the
 \subsection{Availability}
 This will not be defined for this project.
 \subsection{Security}
- A main feature of the website is that depending on the person who is using it (sender ,dispatcher ,driver), they should only be able to access their relevant part. Therefore there some sort code that restricts communications between these different sections needs to be implemented.
+ A main feature of the website is that depending on the person who is using it (sender ,dispatcher ,driver), they should only be able to access their relevant part. Therefore code that restricts communications between these different sections needs to be implemented.
 Cryptographic techniques should be used to protect the data. However this is beyond the scope of this project.
 \subsection{Maintainability}
-The code will be made modular by using as many functions as possible to separate the modules. The code will be made as simple as possible, complex algorithms will be avoided. The code will be extensively commented and documented using Doxygen.
+
+The functionality should be separated into different classes according to it's role.The code will be extensively commented and documented using Doxygen.
+
 \subsection{Portability}
 The system is meant to have one centralised server which handles all user requests. The system can be accessed by any internet enabled device as they only access a webpage.
 
