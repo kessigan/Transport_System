@@ -1,0 +1,27 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}INTRODUCTION}{3}
+\contentsline {subsection}{\numberline {1.1}Problem Statement}{3}
+\contentsline {subsection}{\numberline {1.2}Problem Objectives}{3}
+\contentsline {subsection}{\numberline {1.3}Stakeholders}{4}
+\contentsline {subsection}{\numberline {1.4}PROJECT DELIVERABLES}{4}
+\contentsline {section}{\numberline {2}Design}{5}
+\contentsline {subsection}{\numberline {2.1}Existing Solutions}{5}
+\contentsline {subsection}{\numberline {2.2}System Architecture}{6}
+\contentsline {subsection}{\numberline {2.3}System Overview}{7}
+\contentsline {subsection}{\numberline {2.4}Front-end}{7}
+\contentsline {subsection}{\numberline {2.5}Back-end}{12}
+\contentsline {subsubsection}{\numberline {2.5.1}The postgresql database - designing the database}{14}
+\contentsline {subsubsection}{\numberline {2.5.2}Views}{15}
+\contentsline {subsubsection}{\numberline {2.5.3}Data Processing Scripts}{17}
+\contentsline {subsection}{\numberline {2.6}Use Cases}{18}
+\contentsline {section}{\numberline {3}Relevant Modules Description / Results}{21}
+\contentsline {subsection}{\numberline {3.1}Front-end}{21}
+\contentsline {subsection}{\numberline {3.2}Back end}{25}
+\contentsline {subsubsection}{\numberline {3.2.1}Database Tables}{25}
+\contentsline {section}{\numberline {4}Design Analysis}{27}
+\contentsline {section}{\numberline {5}SCRUM}{28}
+\contentsline {subsection}{\numberline {5.1}The project charter}{28}
+\contentsline {subsection}{\numberline {5.2}Product Backlog}{29}
+\contentsline {subsection}{\numberline {5.3}Sprint Backlog}{29}
+\contentsline {subsection}{\numberline {5.4}Sprint retrospective}{30}
+\contentsline {section}{\numberline {6}Conclusion}{31}

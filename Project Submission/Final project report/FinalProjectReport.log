@@ -1,0 +1,1326 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.9)  11 APR 2016 07:06
+entering extended mode
+**FinalProjectReport.tex
+("F:\Final project report\FinalProjectReport.tex"
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrartcl.cls"
+Document Class: scrartcl 2011/04/02 v3.09 KOMA-Script document class (article)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
+Package: scrkbase 2011/04/02 v3.09 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
+Package: scrbase 2011/04/02 v3.09 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
+Package: scrlfile 2011/03/09 v3.09 KOMA-Script package (loading files)
+
+Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+))) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
+Package: tocbasic 2011/03/23 v3.09 KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 115.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 116.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 117.
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
+ine 1246.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrsize11pt.clo"
+File: scrsize11pt.clo 2011/04/02 v3.09 KOMA-Script font size class option (11pt
+)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\typearea.sty"
+Package: typearea 2011/04/02 v3.09 KOMA-Script package (type area)
+
+Package typearea, 2011/04/02 v3.09 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.60002pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1138.
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count86
+\c@table=\count87
+\bibindent=\dimen102
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fourier.sty"
+Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fourier-orns.sty"
+Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 59.
+\symotherletters=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 61.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 69.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 72.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 114.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+14.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 114.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 114
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 114.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 116.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 187.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 210.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 215.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 225.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 227.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 229.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 231.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 233.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 235.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 237.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 239.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 241.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 243.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 247.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 248.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 249.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 250.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 251.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 252.
+LaTeX Font Info:    Redeclaring math accent \check on input line 253.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 254.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
+\symUfutm=\mathgroup5
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/06 v3.8l The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen104
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks18
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 128.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
+\dth@everypar=\toks25
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2011/02/08 v1.1 150 paragraphs of Lorem Ipsum dummy text
+File: lipsum.dtx 2011/02/08 v1.1 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count101
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sectsty\sectsty.sty"
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/01/28 v0.05d Graphics/color for pdfTeX
+\Gread@gobject=\count102
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip53
+\f@ncyO@elh=\skip54
+\f@ncyO@erh=\skip55
+\f@ncyO@olh=\skip56
+\f@ncyO@orh=\skip57
+\f@ncyO@elf=\skip58
+\f@ncyO@erf=\skip59
+\f@ncyO@olf=\skip60
+\f@ncyO@orf=\skip61
+)
+("F:\Final project report\FinalProjectReport.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 61.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 61.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 61.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 61.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 61.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen115
+\scratchbox=\box29
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen116
+\MPnumerator=\count107
+\everyMPtoPDFconversion=\toks27
+)
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 66
+.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 66.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 66.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 66.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 66.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 66.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("F:\Final project report\FinalProjectReport.toc"
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+)
+\tf@toc=\write3
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 94.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+) [3]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+<pictures/system_architecture.png, id=19, 1224.575pt x 431.6125pt>
+File: pictures/system_architecture.png Graphic file (type png)
+
+<use pictures/system_architecture.png>
+Overfull \hbox (3.43887pt too wide) in paragraph at lines 160--167
+\T1/futs/m/n/10.95 Google vi-su-al-iza-tion API. The con-troller has been im-pl
+e-mented via the web frame-work Django
+ []
+
+<pictures/system_diagram.png, id=20, 1104.125pt x 712.6625pt>
+File: pictures/system_diagram.png Graphic file (type png)
+
+<use pictures/system_diagram.png> [6]
+<pictures/package.png, id=24, 1783.41281pt x 786.68906pt>
+File: pictures/package.png Graphic file (type png)
+
+<use pictures/package.png>
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+
+ []
+
+[7 <F:/Final project report/pictures/system_architecture.png (PNG copy)> <F:/Fi
+nal project report/pictures/system_diagram.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+<pictures/sender.png, id=30, 660.21657pt x 459.21562pt>
+File: pictures/sender.png Graphic file (type png)
+
+<use pictures/sender.png>
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
+
+<pictures/receiverBefore.png, id=31, 658.71094pt x 447.92343pt>
+File: pictures/receiverBefore.png Graphic file (type png)
+
+<use pictures/receiverBefore.png>
+<pictures/receiverAfter.png, id=32, 657.95813pt x 446.41782pt>
+File: pictures/receiverAfter.png Graphic file (type png)
+
+<use pictures/receiverAfter.png>
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+[8 <F:/Final project report/pictures/package.png>]
+<pictures/driver.png, id=37, 670.00313pt x 458.46281pt>
+File: pictures/driver.png Graphic file (type png)
+
+<use pictures/driver.png>
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
+
+ []
+
+<pictures/dispatcherBefore.png, id=38, 657.2053pt x 460.72125pt>
+File: pictures/dispatcherBefore.png Graphic file (type png)
+
+<use pictures/dispatcherBefore.png>
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+
+ []
+
+[9 <F:/Final project report/pictures/sender.png> <F:/Final project report/pictu
+res/receiverBefore.png>] <pictures/CEO.png, id=44, 643.203pt x 471.56175pt>
+File: pictures/CEO.png Graphic file (type png)
+
+<use pictures/CEO.png>
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
+
+ []
+
+<pictures/operational_officer.png, id=45, 629.9535pt x 475.17525pt>
+File: pictures/operational_officer.png Graphic file (type png)
+
+<use pictures/operational_officer.png>
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+ []
+
+<pictures/maintenance.png, id=46, 639.5895pt x 538.4115pt>
+File: pictures/maintenance.png Graphic file (type png)
+
+<use pictures/maintenance.png>
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
+
+ []
+
+<pictures/admin.png, id=47, 641.9985pt x 514.3215pt>
+File: pictures/admin.png Graphic file (type png)
+ <use pictures/admin.png>
+[10 <F:/Final project report/pictures/receiverAfter.png> <F:/Final project repo
+rt/pictures/driver.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
+
+ []
+
+<pictures/accounts.png, id=53, 628.749pt x 496.85625pt>
+File: pictures/accounts.png Graphic file (type png)
+
+<use pictures/accounts.png> [11 <F:/Final project report/pictures/dispatcherBef
+ore.png> <F:/Final project report/pictures/CEO.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 302.
+
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 308.
+
+Underfull \hbox (badness 4505) in paragraph at lines 309--309
+[]\T1/futs/m/n/10.95 Provide a page for all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]\T1/futs/m/n/10.95 Provide a page for a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/futs/m/n/10.95 sender re-quest for a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
+[]\T1/futs/m/n/10.95 Package lo-ca-tion and
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 315--315
+[]\T1/futs/m/n/10.95 Provide a page for the
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 315--315
+\T1/futs/m/n/10.95 de-tails of all de-liv-er-ies
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 315--315
+[]\T1/futs/m/n/10.95 Checklist for pickup or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+[]\T1/futs/m/n/10.95 Initiation of al-lo-ca-tion
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 317--317
+[]\T1/futs/m/n/10.95 Provide a page to view
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+\T1/futs/m/n/10.95 op-er-a-tional ac-tiv-i-ties
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]\T1/futs/m/n/10.95 Generate re-ports on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+\T1/futs/m/n/10.95 server and re-turn to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]\T1/futs/m/n/10.95 Operational
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 318--318
+[]\T1/futs/m/n/10.95 Provide a page to view
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 318--318
+[]\T1/futs/m/n/10.95 Information for re-spec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--319
+[]\T1/futs/m/n/10.95 Vehicle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--319
+\T1/futs/m/n/10.95 main-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--319
+\T1/futs/m/n/10.95 te-nance
+ []
+
+
+Underfull \hbox (badness 5939) in paragraph at lines 319--319
+[]\T1/futs/m/n/10.95 Vehicle id for main-te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]\T1/futs/m/n/10.95 System
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 320--320
+[]\T1/futs/m/n/10.95 Provide a page to view
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]\T1/futs/m/n/10.95 Initiate the ac-tion to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+[]\T1/futs/m/n/10.95 Request for sys-tem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+[]\T1/futs/m/n/10.95 Pause the sys-tem, do
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 321--321
+\T1/futs/m/n/10.95 backup, then start the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
+[]\T1/futs/m/n/10.95 Accounts
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 322--322
+[]\T1/futs/m/n/10.95 Request fi-nan-cial in-for-
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 322--322
+[]\T1/futs/m/n/10.95 Display fi-nan-cial in-for-
+ []
+
+
+Overfull \hbox (28.08301pt too wide) in paragraph at lines 306--324
+ [][] 
+ []
+
+<pictures/backend.png, id=59, 652.4375pt x 642.4pt>
+File: pictures/backend.png Graphic file (type png)
+ <use pictures/backend.png>
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
+
+ []
+
+[12 <F:/Final project report/pictures/operational_officer.png> <F:/Final projec
+t report/pictures/maintenance.png>] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
+
+ []
+
+[14 <F:/Final project report/pictures/admin.png> <F:/Final project report/pictu
+res/accounts.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
+
+ []
+
+<pictures/db/first3.png, id=75, 417.05812pt x 261.22594pt>
+File: pictures/db/first3.png Graphic file (type png)
+
+<use pictures/db/first3.png>
+<pictures/db/second2.png, id=76, 374.14781pt x 242.40562pt>
+File: pictures/db/second2.png Graphic file (type png)
+
+<use pictures/db/second2.png>
+<pictures/db/last1.png, id=77, 118.94438pt x 127.97812pt>
+File: pictures/db/last1.png Graphic file (type png)
+
+<use pictures/db/last1.png>
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
+
+ []
+
+[15 <F:/Final project report/pictures/backend.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
+
+ []
+
+[16 <F:/Final project report/pictures/db/first3.png> <F:/Final project report/p
+ictures/db/second2.png> <F:/Final project report/pictures/db/last1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 380--382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 400--407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--424
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--439
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--468
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--485
+
+ []
+
+
+Overfull \hbox (0.63588pt too wide) in paragraph at lines 487--488
+[]\T1/futs/m/n/10.95 Determine if the ve-hi-cle needs main-te-nance by fol-low-
+ing the man-u-fac-tures guide-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--499
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--529
+
+ []
+
+<pictures/main_page.png, id=101, 1026.08344pt x 526.21594pt>
+File: pictures/main_page.png Graphic file (type png)
+
+<use pictures/main_page.png> [21]
+<pictures/loginreceiver_page.png, id=105, 1021.56656pt x 526.21594pt>
+File: pictures/loginreceiver_page.png Graphic file (type png)
+
+<use pictures/loginreceiver_page.png>
+<pictures/receiver_page.png, id=106, 1028.34187pt x 578.16pt>
+File: pictures/receiver_page.png Graphic file (type png)
+
+<use pictures/receiver_page.png>
+<pictures/sender_page.png, id=107, 1028.34187pt x 578.16pt>
+File: pictures/sender_page.png Graphic file (type png)
+
+<use pictures/sender_page.png> [22 <F:/Final project report/pictures/main_page.
+png> <F:/Final project report/pictures/loginreceiver_page.png>]
+<pictures/driver_page.png, id=113, 1028.34187pt x 578.16pt>
+File: pictures/driver_page.png Graphic file (type png)
+
+<use pictures/driver_page.png> [23 <F:/Final project report/pictures/receiver_p
+age.png> <F:/Final project report/pictures/sender_page.png>]
+<pictures/dispatcher_page.png, id=117, 1028.34187pt x 578.16pt>
+File: pictures/dispatcher_page.png Graphic file (type png)
+
+<use pictures/dispatcher_page.png> [24 <F:/Final project report/pictures/driver
+_page.png> <F:/Final project report/pictures/dispatcher_page.png>]
+<pictures/screenshots/dispatchersdbscreen.png, id=121, 898.10532pt x 173.89969p
+t>
+File: pictures/screenshots/dispatchersdbscreen.png Graphic file (type png)
+ <use pictures/screenshots/dispatchersdbscreen.png>
+<pictures/screenshots/driversdbscreen.png, id=122, 1028.34187pt x 398.23781pt>
+File: pictures/screenshots/driversdbscreen.png Graphic file (type png)
+
+<use pictures/screenshots/driversdbscreen.png>
+<pictures/screenshots/packagespickupscreen.png, id=123, 286.82156pt x 259.7203p
+t>
+File: pictures/screenshots/packagespickupscreen.png Graphic file (type png)
+ <use pictures/screenshots/packagespickupscreen.png>
+<pictures/screenshots/packagesstoragescreen.png, id=124, 285.31593pt x 240.1471
+9pt>
+File: pictures/screenshots/packagesstoragescreen.png Graphic file (type png)
+ <use pictures/screenshots/packagesstoragescreen.png>
+<pictures/screenshots/receiversscreen.png, id=125, 1026.83624pt x 402.75468pt>
+File: pictures/screenshots/receiversscreen.png Graphic file (type png)
+
+<use pictures/screenshots/receiversscreen.png>
+<pictures/screenshots/sendersscreen.png, id=126, 1027.58907pt x 408.77719pt>
+File: pictures/screenshots/sendersscreen.png Graphic file (type png)
+
+<use pictures/screenshots/sendersscreen.png> [25 <F:/Final project report/pictu
+res/screenshots/dispatchersdbscreen.png> <F:/Final project report/pictures/scre
+enshots/driversdbscreen.png>]
+<pictures/ActivityDiagramPacking.png, id=133, 639.13782pt x 690.32906pt>
+File: pictures/ActivityDiagramPacking.png Graphic file (type png)
+
+<use pictures/ActivityDiagramPacking.png>
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 662.
+
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 662.
+
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 662.
+
+[26 <F:/Final project report/pictures/screenshots/packagespickupscreen.png> <F:
+/Final project report/pictures/screenshots/packagesstoragescreen.png>]
+<pictures/doxygen/first_dox_pack.png, id=139, 484.05844pt x 338.01282pt>
+File: pictures/doxygen/first_dox_pack.png Graphic file (type png)
+
+<use pictures/doxygen/first_dox_pack.png>
+<pictures/doxygen/second_dox_pack.png, id=140, 492.33937pt x 283.81032pt>
+File: pictures/doxygen/second_dox_pack.png Graphic file (type png)
+
+<use pictures/doxygen/second_dox_pack.png>
+<pictures/doxygen/third_dox_pack.png, id=141, 478.03593pt x 208.52907pt>
+File: pictures/doxygen/third_dox_pack.png Graphic file (type png)
+
+<use pictures/doxygen/third_dox_pack.png> [27 <F:/Final project report/pictures
+/screenshots/receiversscreen.png> <F:/Final project report/pictures/screenshots
+/sendersscreen.png>]
+Overfull \hbox (2.57205pt too wide) in paragraph at lines 704--704
+[]\T1/futs/b/n/10.95 Priority| 
+ []
+
+
+LaTeX Warning: Float too large for page by 107.59938pt on input line 735.
+
+[28 <F:/Final project report/pictures/ActivityDiagramPacking.png>]
+Underfull \hbox (badness 1635) in paragraph at lines 763--763
+[]\T1/futs/m/n/10.95 Store the re-ceiver's de-tails in
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 765--765
+[]\T1/futs/m/n/10.95 Authorise the user's pack-ages
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 779--779
+[]\T1/futs/m/n/10.95 Make a driver list in the
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 780--780
+[]\T1/futs/m/n/10.95 Implement code to fa-cil-i-tate
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 783--783
+[]\T1/futs/m/n/10.95 Implement a google map us-
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 784--784
+[]\T1/futs/m/n/10.95 Implement a check-list of all
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 786--786
+\T1/futs/m/n/10.95 to choose be-tween routes on
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 789--789
+[]\T1/futs/m/n/10.95 As a sender I need to know
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 789--789
+[]\T1/futs/m/n/10.95 Implement code to cal-cu-late
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 790--790
+[]\T1/futs/m/n/10.95 Display the value of the cal-
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 791--791
+[]\T1/futs/m/n/10.95 Calculate the ETA when the
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 791--791
+\T1/futs/m/n/10.95 pay-ment, and al-lo-ca-tion of a
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 792--792
+[]\T1/futs/m/n/10.95 Send the user a no-ti-fi-ca-tion
+ []
+
+
+LaTeX Warning: Float too large for page by 7.19962pt on input line 796.
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 806--806
+[]\T1/futs/m/n/10.95 Calculate all the statis-tics on
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 807--807
+[]\T1/futs/m/n/10.95 Display the statis-tics on the
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 808--808
+[]\T1/futs/m/n/10.95 Calculate all the statis-tics on
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 809--809
+[]\T1/futs/m/n/10.95 Display the statis-tics on the
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 810--810
+[]\T1/futs/m/n/10.95 As the Ve-hi-cle Main-te-nance
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 810--810
+[]\T1/futs/m/n/10.95 Implement an al-go-rithm that
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 812--812
+[]\T1/futs/m/n/10.95 As the Ve-hi-cle Main-te-nance
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 812--812
+[]\T1/futs/m/n/10.95 Implement an al-go-rithm that
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 816--816
+\T1/futs/m/n/10.95 to see the list of pay-ments
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/futs/m/n/10.95 made (for bookeep-ing pur-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 816--816
+[]\T1/futs/m/n/10.95 Fetch the pay-ments in-for-ma-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 818--818
+[]\T1/futs/m/n/10.95 Fetch the pay-ments in-for-ma-
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 835--835
+[]\T1/futs/m/n/10.95 Implement code to take the
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 836--836
+[]\T1/futs/m/n/10.95 Implement code to fa-cil-i-tate
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 839--839
+[]\T1/futs/m/n/10.95 As the Ve-hi-cle Main-te-nance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 845--846
+
+ []
+
+[29 <F:/Final project report/pictures/doxygen/first_dox_pack.png> <F:/Final pro
+ject report/pictures/doxygen/second_dox_pack.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 847--849
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--849
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--852
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--852
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 853--855
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 853--855
+
+ []
+
+[30 <F:/Final project report/pictures/doxygen/third_dox_pack.png>]
+<pictures/chart.png, id=160, 481.8pt x 258.9675pt>
+File: pictures/chart.png Graphic file (type png)
+ <use pictures/chart.png>
+("F:\Final project report\FinalProjectReport.lof" [31 <F:/Final project report/
+pictures/chart.png>])
+\tf@lof=\write4
+ ("F:\Final project report\FinalProjectReport.lot"
+[32])
+\tf@lot=\write5
+
+Overfull \hbox (3.00105pt too wide) in paragraph at lines 882--883
+[]\T1/futs/m/n/10.95 Unknown. "Tel-o-gis Dis-tri-bu-tions". http://www.telogis.
+com/industries/distribution.
+ []
+
+[33] [34] [35] [36] [37] [38] ("F:\Final project report\FinalProjectReport.aux"
+)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4777 strings out of 494053
+ 68964 string characters out of 3146183
+ 285374 words of memory out of 3000000
+ 7921 multiletter control sequences out of 15000+200000
+ 96239 words of font info for 98 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 35i,11n,47p,1713b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/cm-super/sfsx1095.pfb>
+Output written on FinalProjectReport.pdf (38 pages, 1478020 bytes).
+PDF statistics:
+ 206 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+

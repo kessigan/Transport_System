@@ -5,10 +5,10 @@ def createMainDatabase():
 	conn = psycopg2.connect(database="MainDB", user="postgres", password="password", host="127.0.0.1", port="5432")
 	cur = conn.cursor()
 	
-	#createDriverTable(cur)
-	#createSenderTable(cur)
-	#createReceiverTable(cur)
-	#createDispatcherTable(cur)
+	createDriverTable(cur)
+	createSenderTable(cur)
+	createReceiverTable(cur)
+	createDispatcherTable(cur)
 	
 	createPackagesPickupTable(cur)
 	createPackagesStorageTable(cur)
@@ -19,7 +19,7 @@ def createMainDatabase():
 	
 def createDriverTable(cur):
 	cur.execute("DROP TABLE IF EXISTS drivers_table")
-	cur.execute("CREATE TABLE drivers_table (id serial PRIMARY KEY, Name varchar, Surname varchar, Address varchar, City varchar, PostCode varchar, Email varchar, Phone varchar, Password varchar);")
+	cur.execute("CREATE TABLE drivers_table (id serial PRIMARY KEY, Name varchar, Surname varchar, Address varchar, City varchar, PostCode varchar, Email varchar, Phone varchar, Password varchar, WorkStatus varchar);")
 	
 	f = open(r'drivers.csv', 'r')
 	cur.copy_from(f, "drivers_table", sep=';')

@@ -1,0 +1,35 @@
+\select@language {english}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The system architecture}}{7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The overall system design}}{7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The package life cycle}}{8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The sender view}}{9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The receiver before view}}{9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces The receiver after view}}{10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The driver interface}}{10}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The dispatcher view}}{11}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces The CEO view}}{11}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces The operations officer view}}{12}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The maintenance view }}{12}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces The system administrator view}}{14}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The accounts officer view}}{14}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The backend system diagram}}{15}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces The receiver, sender and driver tables}}{16}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces The servicedclientlist and dispatchers tables}}{16}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces The packages table}}{16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The main page - the first page a user goes to}}{22}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The login page of the receiver}}{22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The receiver page}}{23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The sender page}}{23}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The driver page}}{24}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The dispatcher page}}{24}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces The dispatcher table}}{25}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The drivers table}}{25}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The packages in the pickup table}}{26}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces The packages in storage table}}{26}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The receivers table}}{27}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces The senders table}}{27}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces The packing algorithm activity diagram}}{28}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Doxygen of the packing algorithm namespaces}}{29}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Doxygen of the packing algorithm function documentation}}{29}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Docxygen of the packing algorithm file documentation}}{30}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Burn down chart of prototype}}{31}
