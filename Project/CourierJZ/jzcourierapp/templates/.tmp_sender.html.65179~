@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Driver</title>
+    <title>Sender</title>
 	{% load staticfiles %}
 
     <!-- Bootstrap Core CSS -->
@@ -34,20 +34,19 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	    <style>
-      #map {
-        width: 500px;
-        height: 400px;
-      }
-    h3
-    {
-    	color:#5d005d;
-    	font-size:150%;
-    	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    	font-weight: bold;
-    	
-    }
-    </style>
+	<script>
+											
+		function myFunction() {
+		var email1 = document.getElementById("heightid").value;
+		var email2 = document.getElementById("widthid").value;
+		var email3 = document.getElementById("lengthid").value;
+		alert("The total cost of delivery will be R" + email1 * email2 * email3);
+		};
+											
+	</script>
+
+											
+
 
 </head>
 
@@ -64,7 +63,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../courier/driver">Driver</a>
+                <a class="navbar-brand" href="../courier/sender">Sender</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -82,7 +81,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="../courier/main"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="../courier/main"><i class="fa fa-sign-out fa-fw"></i> Logout</a> 
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -119,114 +118,81 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Driver</h1>
+                    <h1 class="page-header">Sender</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-
-            
-			<div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           Map
-                            
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body" id="map">
-
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-
-
-                </div>
-                <!-- /.col-lg-8 -->
-               
-                <!-- /.col-lg-4 -->
-            </div>
-			<div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           Driver Check List
-                            
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div id="scrollerr" style="overflow:scroll; height:400px;">
-							
-									<script>
-									
-
-								var count = 0;
-									var tasks = ["Drop Off", "Pick Up ", "Drop Off ", "Pick Up ", "Drop Off", "Pick Up ", "Pick Up ", "Pick Up "];
-									while(count < tasks.length)
-									{
-					
-									value_count = JSON.stringify(count);
-									identifier = "login" + value_count;
-										var test = "<h3>" + tasks[count] + ' ' + '<button type="button" class="btn btn-default" type="button"  id='  + identifier +' onclick="myFunction1()" >Submit</button>' + "</br> </br>" + "</h3>";
-						
-									//document.write(tasks[count] + );   
-									document.write(test);
-									   
-									   
-									   
-									   
-									   count++;
-									}
-
-
-
-
-
-
-
-									</script>
-		
-								
-							</div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-
-
-                </div>
-                <!-- /.col-lg-8 -->
-               
-                <!-- /.col-lg-4 -->
-            </div>
             <!-- /.row -->
-
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Send a package
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+								<div class="col-lg-10">
+                                    <form role="form">
+										
+                                        <div class="form-group">
+										
+                                            <label>Package size</label>
+											
+											<div class="row">
+											<div class="col-lg-3">
+                                            <input class="form-control" type="number" placeholder="length(cm)" id="lengthid">
+											</div>
+											<div class="col-lg-3">
+											<input class="form-control" type="number" placeholder="Width(cm)" id="widthid">
+											</div>
+											<div class="col-lg-3">
+                                            <input class="form-control" type="number" placeholder="Height(cm)" id="heightid">
+                                            </div>
+											</div>
+											
+											<p class="help-block">Delivery is charged at R1 per a square centimetre</p>
+											<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction()">Calculate Price </div>
 	
-	<div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           REQUEST DAY OFF
-                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Receiver Name</label>
+                                            <input class="form-control" placeholder="Enter text" id="receiverid">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Receiver Address</label>
+                                            <input class="form-control col-md-8" placeholder="Line 1" id="line1id">
+											<input class="form-control" placeholder="Line 2" id="line2id">
+											<input class="form-control" placeholder="Line 3" id="line3id">
+											<input class="form-control" placeholder="Area Code" id="areaid">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Receiver Cell Number</label>
+                                            <input class="form-control" type="number" placeholder="Enter cell number" id="cellid">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Special Instructions</label>
+                                            <input class="form-control" placeholder="Enter text" id="instructionsid">
+                                        </div>
+
+										<div  class="btn btn-lg btn-success btn-block"  id="login" onclick="myFunction1()">Send and pay </div>
+										
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
                         </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-					<div  class="btn btn-lg btn-success btn-block"  id="day_off" onclick="myFunction()">Request Day Off </div>
-
-
-						</div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-
-
                 </div>
-                <!-- /.col-lg-8 -->
-               
-                <!-- /.col-lg-4 -->
+                
             </div>
             <!-- /.row -->
-
-
-
+            
+            <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
 
@@ -249,36 +215,9 @@
 
     <!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="{% static 'lib/startbootstrap-sb-admin-2-1.0.8/dist/js/sb-admin-2.js' %}"></script>
-	
-	<script>
 
-									
-									
-		function myFunction1() 
-			{
-	
-			console.log(event.target.id);
-			};						
-	</script>
-	
 	<script>
-	  function initMap() {
-		var mapDiv = document.getElementById('map');
-		var map = new google.maps.Map(mapDiv, {
-		  center: {lat: -26.11240, lng: 28.01588}, 
-		  zoom: 8
-		});
-	  }
-	  	  
-	  
-	  
-	</script>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer> 
-	</script>
-	
-	<script>
+		
 		designation = "unknown";
 	designation = {{designation_loading|safe}};
 	console.log(designation);
@@ -293,12 +232,67 @@
 	else
 	{
 		alert("Incorrect Password");
-		window.location.href = '../courier/logindriver';
+		window.location.href = '../courier/loginsender';
 	}
+
+		function myFunction1() {
+		console.log("i am here");
+		var lengthid1 = document.getElementById("lengthid").value;
+		var widthid1 = document.getElementById("widthid").value;
+		var heightid1 = document.getElementById("heightid").value;
+		var receiverid1 = document.getElementById("receiverid").value;
+		var line1id1 = document.getElementById("line1id").value;
+		var line2id1 = document.getElementById("line2id").value;
+		var line3id1 = document.getElementById("line3id").value;
+		var areaid1 = document.getElementById("areaid").value;
+		var cellid1 = document.getElementById("cellid").value;
+		var instructionsid1 = document.getElementById("instructionsid").value;
+		
+		//console.log(trackingid1);
+		
+		
+		var csrftoken = $.cookie('csrftoken');
+
+										function csrfSafeMethod(method) {
+										    // these HTTP methods do not require CSRF protection
+										    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+										}
+
+										$.ajaxSetup({
+										    beforeSend: function(xhr, settings) {
+										        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+										            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+										        }
+										    }
+										});
+																
+										
+		$.post("../courier/login",{
+			length:lengthid1,
+			width:widthid1,
+			height:heightid1,
+			receiver:receiverid1,
+			line1:line1id1,
+			line2:line2id1,
+			line3:line3id1,
+			area:areaid1,
+			cell:cellid1,
+			instrustions:instructionsid1,
+		}
+		);
+		
+		};
+		
+		
+//		if(designation != "unknown")
+//		{
+//			console.log("about to post");
+//			$.post("../courier/"+ designation,{
+//		}
+//		);
+	//	}
+
 	</script>
-	
-
-
 </body>
 
 </html>
